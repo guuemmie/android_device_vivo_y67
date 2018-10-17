@@ -1,0 +1,2 @@
+add_lunch_combo lineage_y67-user
+add_lunch_combo lineage_y67-userdebug

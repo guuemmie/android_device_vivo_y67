@@ -40,21 +40,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc
 
-# NFC
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    NfcNci \
-    Tag
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/configs/nfc/nfc.cfg:system/etc/nfc.cfg \
-    $(LOCAL_PATH)/configs/nfc/nfcse.cfg:system/etc/nfcse.cfg \
-    $(LOCAL_PATH)/configs/nfc/nfcee_access.xml:system/etc/nfcee_access.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -96,12 +81,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/librrc.so:system/lib64/librrc.so \
     $(LOCAL_PATH)/prebuilt/camera/nougat/lib64/libui_ext.so:system/lib64/libui_ext.so \
     $(LOCAL_PATH)/prebuilt/fm/custom/lib/hw/radio.fm.mt6755.so:system/lib/hw/radio.fm.mt6755.so \
-    $(LOCAL_PATH)/prebuilt/nfc/custom/lib/libmtknfc.so:system/lib/libmtknfc.so \
-    $(LOCAL_PATH)/prebuilt/nfc/custom/lib/libnfc_ndef.so:system/lib/libnfc_ndef.so \
-    $(LOCAL_PATH)/prebuilt/nfc/custom/lib/hw/nfc_nci.mt6605.default.so:system/lib/hw/nfc_nci.mt6605.default.so \
-    $(LOCAL_PATH)/prebuilt/nfc/custom/lib64/libmtknfc.so:system/lib64/libmtknfc.so \
-    $(LOCAL_PATH)/prebuilt/nfc/custom/lib64/libnfc_ndef.so:system/lib64/libnfc_ndef.so \
-    $(LOCAL_PATH)/prebuilt/nfc/custom/lib64/hw/nfc_nci.mt6605.default.so:system/lib64/hw/nfc_nci.mt6605.default.so \
     $(LOCAL_PATH)/prebuilt/ril/custom/bin/6620_launcher:system/bin/6620_launcher \
     $(LOCAL_PATH)/prebuilt/ril/custom/bin/6620_wmt_concurrency:system/bin/6620_wmt_concurrency \
     $(LOCAL_PATH)/prebuilt/ril/custom/bin/6620_wmt_lpbk:system/bin/6620_wmt_lpbk \

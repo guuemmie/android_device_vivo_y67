@@ -13,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_BOARD_PLATFORM := mt6755
-
+TARGET_BOARD_PLATFORM := mt6750
+ 
 DEVICE_PATH := device/vivo/y67
 
 # Disable NINJA

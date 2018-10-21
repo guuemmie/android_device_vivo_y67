@@ -45,8 +45,8 @@ BOARD_MKBOOTIMG_ARGS := --board 1465391499 --ramdisk_offset 0x04f88000 --second_
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/vivo/y67
-TARGET_KERNEL_CONFIG := flexy_y67_defconfig
-
+TARGET_KERNEL_CONFIG := mt6750_debug_defconfig
+TARGET_PREBUILT_KERNEL := device/vivo/y67/prebuilt/kernel
 
 # Hack for build
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
